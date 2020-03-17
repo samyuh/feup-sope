@@ -2,7 +2,9 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <string.h>
+
 #define MAX 50000
+
 int main(void) {
 	pid_t pid;
 	for (int i = 0; i < 3; i ++) {
@@ -25,4 +27,4 @@ int main(void) {
 		}
 	}
 	return 0;
-} 
+}
