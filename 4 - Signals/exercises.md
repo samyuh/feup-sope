@@ -33,3 +33,8 @@ sigAct.sa_flags = 0;
 a) A cada 10 segundo, é processado 1 interrupção de CTRL-C. Se enquanto estiver a ser processado é dado n CTRL-C, só 1 vai ser processado depois.
 
 b) O processo é terminado por completo.
+
+## Exercise 4
+
+a)
+Aqui o principal inconveniente tem a ver com o tempo de execução. Como não se sabe ao certo quais filhos / trabalho do pai, vai demorar mais, pode levar a que se perca muito tempo a esperar por um filho em especifico, ou um filho a esperar muito tempo para ver o seu exit code recolhido devido ao pai estar a demorar muito nas suas tarefas.
